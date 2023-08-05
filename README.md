@@ -1,6 +1,5 @@
 # Optical Flow Computation Program (Horn-Schunck Method)
 
-![Optical Flow](link_to_image_or_gif)
 
 ## Overview
 
