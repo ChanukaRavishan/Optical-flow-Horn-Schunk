@@ -48,11 +48,10 @@ python compute_optical_flow.py --input_path data/image_sequences --output_path r
 
 Contributions to this project are welcome! Feel free to open issues and submit pull requests to address bugs, add new features, or improve the existing implementation.
 
-## License
 
 ## Credits
 
-This optical flow computation program was developed by [Your Name](https://github.com/ChanukaRavishan).
+This optical flow computation program was developed by Chanuka Algama (https://github.com/ChanukaRavishan).
 
 ## Acknowledgments
 
