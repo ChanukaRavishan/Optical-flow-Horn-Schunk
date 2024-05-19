@@ -1,13 +1,20 @@
-# Optical Flow Computation Program (Horn-Schunck Method)
+# Optical Flow Computation (Horn-Schunck Method)
 
 
 ## Overview
 
-This is a Python implementation of the Horn-Schunck optical flow computation method. Given image sequences as input, this program calculates flow vectors (u, v) that represent the motion of pixels between consecutive frames. The Horn-Schunck method is a classic and widely used approach for estimating optical flow in computer vision.
+This is a Python implementation of the Horn-Schunck optical flow computation method. Given an image sequence as input, this program calculates flow vectors (u, v) that represent pixel motion between consecutive frames. The Horn-Schunck method is a classic and widely used approach for estimating optical flow in computer vision.
+
+## Example usage: Test image and corresponding result image
+
+<p align="center">
+  <img src="car1.jpg" alt="Test Image" width="45%" />
+  <img src="result.png" alt="Result Image" width="45%" />
+</p>
 
 ## Features
 
-- Computes optical flow for image sequences.
+- Consider two input images of consecutive frames, and compute optical flow.
 - Utilizes the Horn-Schunck method for optical flow estimation.
 - Regularization constant (alpha) to control the smoothness of the output flow vectors.
 - Easily adjustable parameters for customized results.
@@ -17,8 +24,8 @@ This is a Python implementation of the Horn-Schunck optical flow computation met
 Before running the program, make sure you have Python (>= 3.6) installed on your system. Clone this repository and install the required dependencies:
 
 ```bash
-git clone https://github.com/your_username/optical-flow-computation.git
-cd optical-flow-computation
+git clone https://github.com/chanukaravishan/Optical-flow-Horn-Schunk.git
+cd Optical-flow-Horn-Schunk
 pip install -r requirements.txt
 ```
 
@@ -28,21 +35,14 @@ To compute optical flow for your image sequences, follow these steps:
 
 1. Prepare your image sequences: Make sure you have consecutive image frames in a directory.
 
-2. Open the `compute_optical_flow.py` script and set the `alpha` parameter according to your requirements. The higher the value of `alpha`, the smoother the output flow vectors will be.
+2. Open the `of_hornschunk.py` script and set the `alpha` parameter according to your requirements. The higher the value of `alpha`, the smoother the output flow vectors will be.
 
 3. Run the script by providing the path to your image sequence directory:
 
 ```bash
-python compute_optical_flow.py --input_path /path/to/your/image_sequences --output_path /path/to/save/flow_results
+python of_hornschunk.py --input_path /path/to/your/image_sequences --output_path /path/to/save/flow_results
 ```
 
-4. The program will process the image sequences and display the flow vectors over the image.
-## Example
-
-```python
-# Example usage
-python compute_optical_flow.py --input_path data/image_sequences --output_path results/optical_flow --alpha 1.5
-```
 
 ## Contributing
 
